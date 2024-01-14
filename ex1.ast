@@ -21,7 +21,7 @@
 	},
 	{
 		"type": "var_assignment",
-		"varname": "bool",
+		"varname": "array",
 		"value": [
 			1,
 			2,
@@ -35,8 +35,74 @@
 		]
 	},
 	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
 		"type": "print_statement",
-		"expression": "bool"
+		"expression": "array"
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_statement",
+		"expression": 1
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "a"
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_statement",
+		"expression": "true"
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_statement",
+		"expression": "null"
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_statement",
+		"expression": {
+			"type": "binary_expression",
+			"left": "i",
+			"operator": "+",
+			"right": {
+				"type": "binary_expression",
+				"left": 1,
+				"operator": "*",
+				"right": 2
+			}
+		}
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
+	},
+	{
+		"type": "print_statement",
+		"expression": 1000000
+	},
+	{
+		"type": "print_Stringstatement",
+		"expression": "------------"
 	},
 	{
 		"type": "while_loop",

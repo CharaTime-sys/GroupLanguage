@@ -22,6 +22,14 @@ print_statement -> "print" __ expression {%
             }
         }
     %}
+    | "print" __ string {%
+        data =>{
+            return {
+                type:"print_Stringstatement",
+                expression: data[2]
+            }
+        }
+    %}
 
 while_loop -> _ "while" __ binary_expression _ "{" _ "\r\n" statements "\r\n" _ "}" {%
         data =>{

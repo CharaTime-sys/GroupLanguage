@@ -26,6 +26,15 @@ var grammar = {
             }
         }
             },
+    {"name": "print_statement$string$2", "symbols": [{"literal":"p"}, {"literal":"r"}, {"literal":"i"}, {"literal":"n"}, {"literal":"t"}], "postprocess": function joiner(d) {return d.join('');}},
+    {"name": "print_statement", "symbols": ["print_statement$string$2", "__", "string"], "postprocess": 
+        data =>{
+            return {
+                type:"print_Stringstatement",
+                expression: data[2]
+            }
+        }
+            },
     {"name": "while_loop$string$1", "symbols": [{"literal":"w"}, {"literal":"h"}, {"literal":"i"}, {"literal":"l"}, {"literal":"e"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "while_loop$string$2", "symbols": [{"literal":"\r"}, {"literal":"\n"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "while_loop$string$3", "symbols": [{"literal":"\r"}, {"literal":"\n"}], "postprocess": function joiner(d) {return d.join('');}},

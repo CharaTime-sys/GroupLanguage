@@ -2,8 +2,22 @@ i := 1
 n := 25
 fi := 1
 fii := 1
-bool := [1,2,3,3,[1,2,3]]
-print bool
+array := [1,2,3,3,[1,2,3]]
+print "------------"
+print array
+print "------------"
+print 1
+print "------------"
+print "a"
+print "------------"
+print true
+print "------------"
+print null
+print "------------"
+print i + 1 * 2
+print "------------"
+print 1000 000
+print "------------"
 while i <= n {
     print fi
     temp := fi + fii

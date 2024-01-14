@@ -36,7 +36,11 @@ function generateJS(statements,declaredVars){
         }else if(statement.type == "print_statement"){
             const expression = generateJSForExpression(statement.expression,declaredVars);
             lines.push(`console.log(${expression});`);
-        }else if(statement.type == "while_loop"){
+        }else if(statement.type == "print_Stringstatement"){
+            const expression = generateJSForStringExpression(statement.expression,declaredVars);
+            lines.push(`console.log(${expression});`);
+        }
+        else if(statement.type == "while_loop"){
             const condition = generateJSForExpression(statement.condition,declaredVars);
             const body = generateJS(statement.body,declaredVars)
                 .split("\n")
@@ -70,6 +74,10 @@ function generateJSForExpression(expression,declaredVars){
         }
     }
     return expression;
+}
+
+function generateJSForStringExpression(expression,declaredVars){
+    return `"${expression}"`;
 }
 
 function parseExpression(expression){
